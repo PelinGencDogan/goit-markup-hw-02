@@ -24,27 +24,34 @@ body {
 
 header {
   width: 100%;
-  height: 72px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   background: var(--white);
   border-bottom: 1px solid var(--cornflower);
 }
 
-.menu-nav ul {
-  display: flex;
+header a {
+  font-family: var(--raleway);
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--iris);
+}
+
+header a span {
+  color: var(--grey);
+}
+
+header nav ul {
   gap: 40px;
   list-style: none;
 }
 
-.menu-nav ul li a {
+header nav ul li a {
   text-decoration: none;
   color: var(--slate);
 }
 
 address ul {
-  display: flex;
   list-style: none;
 }
 
@@ -57,10 +64,7 @@ address ul li a {
   width: 100%;
   height: 600px;
   background: var(--navyblue);
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 .order-service h1 {
@@ -82,24 +86,28 @@ address ul li a {
   cursor: pointer;
 }
 
-.vision, .strategy, .punctuality, .diligence, .technologies {
+.vision,
+.strategy,
+.punctuality,
+.diligence,
+.technologies {
   padding: 1rem;
   margin: 1rem;
 }
 
 .vision ul {
-  display: flex;
   gap: 32px;
   list-style: none;
 }
 
 .vision ul li {
-  background-color: var(--white);  
-  border: 1px solid #ddd; 
+  background-color: var(--white);
+  border: 1px solid #ddd;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.vision ul li h3, .vision ul li p {
+.vision ul li h3,
+.vision ul li p {
   color: var(--slate);
 }
 
@@ -109,15 +117,11 @@ address ul li a {
 }
 
 .our-team ul {
-  display: flex;
-  justify-content: center;
   gap: 32px;
   list-style: none;
 }
 
 .our-team ul li {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   background: var(--white);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -131,9 +135,6 @@ address ul li a {
 }
 
 .our-portfolio ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 16px;
   list-style: none;
 }
