@@ -30,7 +30,7 @@ header {
 
 header a {
   font-family: var(--raleway);
-  font-weight: 700;
+  font-weight: bold;
   font-size: 18px;
   color: var(--iris);
 }
@@ -75,7 +75,7 @@ address ul li a:hover {
 
 .order-service h1 {
   font-family: var(--roboto);
-  font-weight: 700;
+  font-weight: bold;
   font-size: 56px;
   line-height: 60px;
   text-align: center;
@@ -87,7 +87,7 @@ address ul li a:hover {
   color: var(--white);
   cursor: pointer;
   font-family: var(--roboto);
-  font-weight: 500;
+  font-weight: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -117,10 +117,20 @@ address ul li a:hover {
 h2 {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
@@ -169,7 +179,7 @@ footer p {
 
 footer a {
   font-family: var(--raleway);
-  font-weight: 700;
+  font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
   color: var(--iris);
