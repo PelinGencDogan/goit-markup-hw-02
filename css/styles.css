@@ -16,49 +16,59 @@
 
 body {
   font-family: var(--roboto);
-  font-size: 16px;
-  line-height: 24px;
-  position: absolute;
-  width: 100%;
+  color: var(--slate);
+  background-color: var(--white);
 }
 
 header {
-  width: 100%;
-  align-items: center;
-  background: var(--white);
-}
-
-header a {
-  font-family: var(--raleway);
-  font-weight: 500;
-  font-size: 18px;
-  color: var(--iris);
-}
-
-header a span {
   color: var(--grey);
 }
 
-header nav ul {
-  gap: 40px;
-  list-style: none;
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: var(--raleway);
+  color: var(--iris);
+}
+
+.headerlogospan {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: var(--raleway);
+  color: var(--grey);
 }
 
 header nav ul li a {
-  color: var(--ocean);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--grey);
 }
 
 header nav ul li a:hover {
-  text-decoration: none;
-  color: var(--slate);
+  color: var(--ocean);
 }
 
-address ul {
-  list-style: none;
+header nav ul li a:focus {
+  color: var(--ocean);
+}
+
+address {
+  font-style: normal;
 }
 
 address ul li a {
-  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--slate);
 }
 
@@ -66,18 +76,19 @@ address ul li a:hover {
   color: var(--ocean);
 }
 
+address ul li a:focus {
+  color: var(--ocean);
+}
+
 .order-service {
-  width: 100%;
-  height: 600px;
   background: var(--navyblue);
-  align-items: center;
 }
 
 .order-service h1 {
-  font-family: var(--roboto);
   font-weight: 700;
   font-size: 56px;
-  line-height: 60px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
   text-align: center;
   color: var(--white);
 }
@@ -87,109 +98,124 @@ address ul li a:hover {
   color: var(--white);
   cursor: pointer;
   font-family: var(--roboto);
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--white);
 }
 
+.order-service button :hover {
+  background: (--ocean);
+}
 
-.vision ul {
-  gap: 32px;
-  list-style: none;
+.order-service button :focus {
+  background: (--ocean);
 }
 
 .vision ul li {
   background-color: var(--white);
 }
 
-.vision ul li h3,
+.vision ul li h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+}
+
 .vision ul li p {
   color: var(--slate);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .our-team {
-  align-items: center;
-  width: 100%;
   background: var(--cloud);
 }
 
-h2 {
-  font-family: "Roboto";
-  font-style: normal;
+.our-team h2 {
   font-weight: 700;
   font-size: 36px;
-  line-height: 40px;
-  text-align: center;
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--navyblue);
 }
 
-h3 {
-  font-family: "Roboto";
-  font-style: normal;
+.our-team h3 {
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  text-align: center;
+  color: var(--navyblue);
 }
 
-.our-team ul {
-  gap: 32px;
-  list-style: none;
+.our-team ul li p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--slate);
 }
 
 .our-team ul li {
-  align-items: center;
   background: var(--white);
 }
 
-.our-portfolio {
-  width: 100%;
-}
-
-.our-portfolio ul {
-  gap: 16px;
-  list-style: none;
+.our-portfolio h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--navyblue);
 }
 
 .our-portfolio ul li {
-  width: 360px;
   background: var(--white);
-  text-align: center;
 }
 
-.our-portfolio ul li img {
-  width: 100%;
-  height: 300px;
+.our-portfolio ul li h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+}
+
+.our-portfolio ul li p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
 }
 
 footer {
-  width: 100%;
-  height: 312px;
   background: var(--navyblue);
-  color: var(--cloud);
 }
 
 footer p {
-  font-family: var(--roboto);
+  font-weight: 400;
   font-size: 16px;
-}
-
-footer a {
-  font-family: var(--raleway);
-  font-weight: bold;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: var(--iris);
-}
-
-footer a span {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--cloud);
 }
 
-button:focus,
-button:hover {
-  background-color: var(--ocean);
+.footerlogospan {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: var(--raleway);
+  color: #f4f4fd;
 }
