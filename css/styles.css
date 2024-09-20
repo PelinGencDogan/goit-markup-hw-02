@@ -104,12 +104,12 @@ address ul li a:focus {
   letter-spacing: 0.04em;
 }
 
-.order-service button :hover {
-  background: (--ocean);
+.order-service button:hover {
+  background-color: var(--ocean);
 }
 
-.order-service button :focus {
-  background: (--ocean);
+.order-service button:focus {
+  background-color: var(--ocean);
 }
 
 .vision ul li {
